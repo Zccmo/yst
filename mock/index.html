@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+</head>
+<body>
+	<script src="jquery-1.8.3.min.js"></script>
+	<script>
+		$.ajax({
+			url:'http://localhost:3000/login',
+			type:'POST',
+			data:'userName=mima&password=222222'
+				
+		})
+		.then(function(result){
+			console.log(111,result)
+		},function(error){
+			console.log(222,error)
+		})
+	</script>
+</body>
+</html>
